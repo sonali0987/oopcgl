@@ -1,0 +1,28 @@
+#include <iostream>
+#include <fstream>
+ 
+using namespace std;
+ 
+int main()
+{
+
+       int a,b,c;
+
+
+ 	ifstream fin; //object of ifstream class
+	fin.open("myinput.txt");
+	fin>>a>>b;
+	c=a+b;
+
+	cout<< "addition is: "<<c;
+
+	ofstream fout;
+
+	fout.open("myoutput.txt");
+	fout<<c;
+	fin.close();
+
+         return 0;
+}
+ Output:
+addition is 10
